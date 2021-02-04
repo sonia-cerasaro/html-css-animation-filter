@@ -19,7 +19,7 @@
 
 @keyframes ex-2-square {
   from {width: 100px;}
-  to {width: 1000px;}
+  to {width: 100%;}
 }
 
   /* <!-- Esercizio 3 --> */
@@ -32,27 +32,34 @@
     border-radius: 50%;
   }
 
-
   /* <!-- Esercizio 4 --> */
 
   .ex-4-square:hover {
     transition: all, 1s;
     opacity: 0.0;
-
   }
 
   /* <!-- Esercizio 5 --> */
 
-  /* .ex-5-square:hover {
-    transition: all, 1s;
-    opacity: 0.0; */
+.ex-5-square {
+  transition: all 0.2s ease;
+  margin: 0;
 
+}
+  .ex-5-square:hover {
+    width: 100px;
+    height: 100px;
+  }
+
+  .ex-5-square:active {
+    width: 50px;
+    height: 50px;
   }
 
   /* <!-- Esercizio 6 --> */
 
   .ex-6-img {
-      transition: 3s;
+      transition: 1s;
   }
 
   .ex-6-img:hover {
@@ -62,7 +69,7 @@
 /* <!-- Esercizio 7 --> */
 
   .ex-7-img {
-    transition: 2s;
+    transition: 1s;
   }
   .ex-7-img:hover {
     filter: grayscale(.6) sepia(.5);
@@ -71,10 +78,10 @@
 /* <!-- Esercizio 8 --> */
 
 .ex-8-img {
-    transition: 3s;
+    transition: 1s;
 }
 
 .ex-8-img:hover {
-    border-radius: 15px;
+    border-radius: 20px;
     filter: sepia(.7);
 }
