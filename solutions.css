@@ -14,7 +14,7 @@
 .ex-2-square:active {
   width: 100px;
   animation-name: ex-2-square;
-  animation-duration: 7s;
+  animation-duration: 2s;
 }
 
 @keyframes ex-2-square {
@@ -84,4 +84,40 @@
 .ex-8-img:hover {
     border-radius: 20px;
     filter: sepia(.7);
+}
+
+/* <!-- Esercizio 9 --> */
+
+.ex-9-img {
+  transition: 3s;
+}
+
+.ex-9-img:hover {
+  border-radius: 20px;
+  filter: grayscale(.6) sepia(.5);
+  transform: scale(1.5);
+}
+
+/* <!-- Esercizio 10 --> */
+
+.ex-10-icon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(1turn);
+  }
+}
+
+/* <!-- Esercizio 11 --> */
+
+.ex-11-icon:hover {
+  animation: spin-half 2s linear infinite;
+}
+
+@keyframes spin-half {
+  90% {
+    transform: rotate(300deg);
+  }
 }
